@@ -35,7 +35,7 @@ class UsePuppeteer extends Service {
   // 测试截取百度查询到的页面
   public async bilibiliHome(searchStr?: string) {
     const res: any = {};
-    console.log('------ 开始调用 puppeter ------');
+    console.log('------ 开始调用 puppeteer ------');
     const browser = await this._createBrowser();
     const page = await browser.newPage();
     await page.goto('https://www.bilibili.com/', {

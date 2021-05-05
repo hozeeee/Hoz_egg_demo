@@ -1,7 +1,7 @@
 import { Controller } from 'egg';
 import { RESP_STATE } from '../../helper/constants';
 
-class TestPuppeter extends Controller {
+class TestPuppeteer extends Controller {
 
   // 访问 哔哩哔哩 首页，查询特定内容
   public async bilibiliHome() {
@@ -21,4 +21,4 @@ class TestPuppeter extends Controller {
 
 
 }
-export default TestPuppeter;
+export default TestPuppeteer;

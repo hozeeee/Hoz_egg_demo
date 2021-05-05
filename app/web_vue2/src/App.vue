@@ -3,7 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/demos">ApiDemos</router-link> |
-      <router-link to="/puppeter">PuppeterDemo</router-link> |
+      <router-link to="/puppeteer">PuppeteerDemo</router-link> |
       <router-link to="/mailer">MailerDemo</router-link>
     </div>
     <router-view />

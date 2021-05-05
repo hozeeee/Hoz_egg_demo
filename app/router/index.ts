@@ -18,7 +18,7 @@ export default (app: Application) => {
   router.post('/api/logout', controller.api.login.logout);
 
 
-  router.all('/puppeter/bilibili', controller.puppeter.demo.bilibiliHome);
+  router.all('/puppeteer/bilibili', controller.puppeteer.demo.bilibiliHome);
 
   router.all('/nodemailer/send', controller.nodemailer.demo.send);
   router.all('/nodemailer/receive', controller.nodemailer.demo.receive);

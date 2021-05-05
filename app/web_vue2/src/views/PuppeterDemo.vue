@@ -26,7 +26,7 @@ export default {
     test() {
       this.loading = true;
       this.imgSrcs = [];
-      post(`/puppeter/bilibili?searchStr=${this.searchStr}`)
+      post(`/puppeeter/bilibili?searchStr=${this.searchStr}`)
         .then((res) => {
           return res.json();
         })

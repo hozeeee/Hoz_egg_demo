@@ -6,7 +6,7 @@ import ExportHome from '../../../app/controller/home';
 import ExportApiDemo from '../../../app/controller/api/demo';
 import ExportApiLogin from '../../../app/controller/api/login';
 import ExportNodemailerDemo from '../../../app/controller/nodemailer/demo';
-import ExportPuppeterDemo from '../../../app/controller/puppeter/demo';
+import ExportPuppeteerDemo from '../../../app/controller/puppeteer/demo';
 
 declare module 'egg' {
   interface IController {
@@ -18,8 +18,8 @@ declare module 'egg' {
     nodemailer: {
       demo: ExportNodemailerDemo;
     }
-    puppeter: {
-      demo: ExportPuppeterDemo;
+    puppeteer: {
+      demo: ExportPuppeteerDemo;
     }
   }
 }
