@@ -1,0 +1,103 @@
+{
+  "name": "egg_demo_",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "author": "",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "autod": "autod",
+    "ci": "npm run lint && npm run cov && npm run tsc",
+    "clean": "ets clean",
+    "cov": "egg-bin cov",
+    "debug": "egg-bin debug",
+    "dev": "egg-bin dev",
+    "start": "egg-scripts start --daemon --title=egg-server-egg_demo_",
+    "stop": "egg-scripts stop --title=egg-server-egg_demo_",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "web-build": "cd app/web_vue2 && vue-cli-service build",
+    "web-lint": "cd app/web_vue2 && vue-cli-service lint",
+    "web-serve": "cd app/web_vue2 && vue-cli-service serve"
+  },
+  "dependencies": {
+    "await-stream-ready": "^1.0.1",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.10.4",
+    "egg": "^2.6.1",
+    "egg-scripts": "^2.6.0",
+    "egg-view-assets": "^1.6.1",
+    "egg-view-nunjucks": "^2.3.0",
+    "imap": "^0.8.19",
+    "koa-is-json": "^1.0.0",
+    "mailparser": "^3.2.0",
+    "nodemailer": "^6.5.0",
+    "puppeteer": "^8.0.0",
+    "stream-wormhole": "^1.1.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.10.14",
+    "@types/supertest": "^2.0.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "^4.5.11",
+    "@vue/cli-plugin-vuex": "^4.5.11",
+    "@vue/cli-service": "~4.5.0",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "babel-eslint": "^10.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.16.0",
+    "eslint": "^6.7.2",
+    "eslint-config-egg": "^8.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^2.3.1",
+    "less-loader": "^5.0.0",
+    "tslib": "^1.9.0",
+    "typescript": "^3.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "ci": {
+    "version": "8"
+  },
+  "egg": {
+    "typescript": true,
+    "declarations": true
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "eslintIgnore": [
+    "coverage"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

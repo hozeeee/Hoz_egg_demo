@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>egg_demo</title>
+  {{ helper.assets.getStyle('css/app.css') | safe }}
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but egg_demo doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  {{ helper.assets.getScript('js/app.js') | safe }}
+  {{ helper.assets.getScript('js/chunk-vendors.js') | safe }}
+  <script>
+    window.routerBase = '/';
+    window.resourceBaseUrl = '{{ helper.assets.resourceBase }}';
+  </script>
+</body>
+
+</html>
