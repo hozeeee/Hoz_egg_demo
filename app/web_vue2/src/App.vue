@@ -4,7 +4,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/demos">ApiDemos</router-link> |
       <router-link to="/puppeteer">PuppeteerDemo</router-link> |
-      <router-link to="/mailer">MailerDemo</router-link>
+      <router-link to="/mailer">MailerDemo</router-link> |
+      <router-link to="/httpClient">HttpClientDemo</router-link>
     </div>
     <router-view />
   </div>

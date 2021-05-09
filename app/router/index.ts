@@ -22,5 +22,10 @@ export default (app: Application) => {
 
   router.all('/nodemailer/send', controller.nodemailer.demo.send);
   router.all('/nodemailer/receive', controller.nodemailer.demo.receive);
+  
+  router.all('/httpClient/post', controller.httpClient.demo.post);
+  router.all('/httpClient/upload', controller.httpClient.demo.upload);
+  router.all('/httpClient/uploadByStream', controller.httpClient.demo.uploadByStream);
+  router.post('/httpClient/upload/stream', controller.httpClient.demo.postStream);
 
 };
